@@ -7,11 +7,11 @@ ___
 
 ```hs
 IP: 148.118.244.202
-SubnetIp: 
-Maskred: 
-Dns: 
-Gateway: 
-IpBroadcast:
+SubnetIp: 148.118.240.0
+Maskred: 255.255.248.0
+Dns: 148.118.240.1
+Gateway: 148.118.240.1
+IpBroadcast: 148.118.247.255
 ```
 
 **LAN**
@@ -22,6 +22,7 @@ SubnetIp:
 Maskred: 
 Dns: 
 Gateway: 
+1708
 ```
 ___
 

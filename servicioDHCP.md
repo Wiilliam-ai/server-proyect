@@ -8,6 +8,9 @@ yum update
 ```bash
 yum upgrade
 ```
+```bash
+yum -y install dhcp
+```
 > Los paquetes tienen que estar actualizados todo el procesi se realiza desde el usuario root
 ____
 **Pasos para poder configurar el servidor dhcp**
@@ -48,4 +51,18 @@ El archivo debe contar con
 ```hs
 NETWORKING=yes
 HOSTNAME=dns.miempresa.ucv
+```
+Editar el archivo dhcpd.conf
+```hs
+option domain-name "example.com";
+authoritative;
+subnet 192.168.1.0 netmask 255.255.255.0 {
+    range 192.168.1.110 192.168.1.130;
+    option subnet-mask 255.255.255.0;
+    option broadcast-address 192.168.1.255;
+    option routers 192.168.1.1;
+    option domain-name-servers 8.8.8.8;
+    default-lease-time 600;
+    max-lease-time 7200;
+}
 ```
