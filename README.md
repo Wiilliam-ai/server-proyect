@@ -6,23 +6,21 @@ ___
 **WAN**
 
 ```hs
-IP: 148.118.244.202
-SubnetIp: 148.118.240.0
-Maskred: 255.255.248.0
-Dns: 148.118.240.1
-Gateway: 148.118.240.1
-IpBroadcast: 148.118.247.255
+SubnetIp: 148.118.244.192
+Maskred: 255.255.255.192 /26
+Dns: 148.118.244.254
+Gateway: 148.118.244.254
+IpBroadcast: 148.118.244.255
 ```
 
 **LAN**
 
 ```hs
-IP: 87.206.210.116
-SubnetIp: 
-Maskred: 
-Dns: 
-Gateway: 
-1708
+SubnetIp: 87.206.208.0
+Maskred: 255.255.248.0 /21
+Dns: 87.206.215.254
+Gateway: 87.206.215.254
+IpBroadcast: 87.206.215.255
 ```
 ___
 
